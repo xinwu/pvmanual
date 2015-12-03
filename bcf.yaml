@@ -1,0 +1,17 @@
+bcf::mode: "pfabric"
+bcf::role: "compute"
+bcf::os: "centos"
+bcf::uplink1: "eth0"
+bcf::uplink2: "eth1"
+bcf::bcf_username: "admin"
+bcf::bcf_password: "admin"
+bcf::neutron_id: "neutron"
+bcf::controllers: "198.162.150.210:8000,198.162.150.217:8000"
+bcf::network_vlan_ranges: "physnet2:500:2000"
+bcf::keystone_auth_url: "http://controller:35357"
+bcf::keystone_auth_user: "admin",
+bcf::keystone_password: "admin",
+bcf::keystone_auth_tenant: "admin",
+bcf::br_int: "br_int",
+bcf::br_mappings: "physnet2:br_int",
+bcf::fqdn: "compute",

@@ -1,0 +1,22 @@
+
+---
+:backends:
+  - yaml
+
+:hierarchy:
+  - override/node/%{::fqdn}
+  - override/class/%{calling_class}
+  - override/module/%{calling_module}
+  - override/plugins
+  - override/common
+  - class/%{calling_class}
+  - module/%{calling_module}
+  - nodes
+  - globals
+  - astute
+  - bcf
+
+:yaml:
+  :datadir: /etc/hiera
+:merge_behavior: deeper
+:logger: noop
